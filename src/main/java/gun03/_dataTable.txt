@@ -1,0 +1,31 @@
+DataTable
+    Steplere data kaynagi olustururlar
+    Istenilen step altinda bulunur
+    Ornek
+
+    Given step...
+    | a | b |
+    | c | d |
+
+    DataTable ->
+    List<String>,
+    List<List<String>>,
+
+    Map<String, String>,
+    List<Map<String,String>>
+
+    bunlar dataTable'ın aldıgı data turleri
+
+
+    When kullanici formu asagidaki bilgilerle dolduruldugunda
+        | firstname | ali |
+        | lastname  | veli |
+
+        // okunan datatable verileri String.class kullanilarak String formatina donusturulur
+        List<String> list = table.asList(String.class);
+
+        //asList() ici bos birakiliyorsa default olarak string class alinir
+        List<String> list = table.asList();
+
+        //Datalarim int ise, Integer bir list olusacaksa, Integer.class kullanırım
+        List<Integer> list = table.asList(Integer.class);

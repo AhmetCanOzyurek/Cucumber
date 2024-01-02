@@ -1,0 +1,20 @@
+Feature
+
+Scenario
+
+Steps
+Given, Then, And, When -> Step annotations
+
+Background
+
+Datatable
+    List
+    List of Lists
+    Map
+    List of maps
+
+Scenario Outline
+    Example:
+
+    Bu datalar tum senaryoda kullanilabilir
+

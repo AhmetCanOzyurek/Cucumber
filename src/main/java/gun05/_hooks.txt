@@ -1,0 +1,21 @@
+
+
+hooks : kanca, cengel
+
+TestNG -> BeforeTest, @AfterTest, ....
+
+Cucumber
+
+    @BeforeAll, -> static olmali
+        @Before,  -> senaryo oncesi
+            @BeforeStep -> stp oncesi
+
+            @AfterStep
+        @After,
+    @AfterAll,
+
+
+
+Feature'i run ediyorsaniz, Hooks'lar tum projede aranir
+
+Eger Feature TestNG Runner ile run ediliyor ise, Hook yeri glue'da belirtilmeli
